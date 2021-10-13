@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react';
+import HeroHome from '../headers/HeroHome';
 
 const Home = () => {
+    
+    const [loading, setLoading] = useState(false);
+
     return (
-        <div>
-            Home
-        </div>
+        <main className={`min-h-screen`}>
+            <HeroHome/>
+        </main>
     )
 }
 

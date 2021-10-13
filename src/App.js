@@ -8,6 +8,7 @@ const TopNav = lazy(() => import('./components/navigation/TopNav'));
 
 //Main Views
 const Home = lazy(() => import('./components/views/Home'));
+const Login = lazy(() => import('./components/views/Login'));
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
     }>
       <TopNav/>
       <Switch>
-        <Route exact path="/" component={Home}/>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/login" component={Login}/>
       </Switch>
       
     </Suspense>
