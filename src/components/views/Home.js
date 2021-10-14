@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import HeroHome from '../headers/HeroHome';
+import PopDestinations from '../popular/destinations/PopDestinations';
 
 // Initial state for TripSelector form
 const initialState = {
@@ -35,6 +36,7 @@ const Home = () => {
                 handleSubmit={handleSubmit}
                 values={values}
             />
+            <PopDestinations/>
         </main>
     )
 }
