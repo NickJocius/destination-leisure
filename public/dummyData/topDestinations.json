@@ -1,0 +1,29 @@
+{
+    "data":[{
+        "city": "Madrid",
+        "image": "/assets/images/350x234.jpg",
+        "rating": "3",
+        "country": "Spain"
+    },
+    {
+        "city": "Rio de Janiero",
+        "image": "/assets/images/350x234.jpg",
+        "rating": "3",
+        "country": "Brazil"
+    },
+    {
+        "city": "Portland",
+        "image": "/assets/images/350x234.jpg",
+        "rating": "3",
+        "state": "Oregon",
+        "country": "United States"
+    },
+    {
+        "city": "New York",
+        "image": "/assets/images/350x234.jpg",
+        "rating": "3",
+        "state": "New York",
+        "country": "United States"
+    }
+]
+    }

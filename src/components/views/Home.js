@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import HeroHome from '../headers/HeroHome';
 import PopDestinations from '../popular/destinations/PopDestinations';
+import { getTopDest } from '../../functions/destinations';
 
 // Initial state for TripSelector form
 const initialState = {
@@ -10,11 +11,31 @@ const initialState = {
 }
 
 const Home = () => {
-
+    const [destinations, setDestinations] = useState([]);
     const [loading, setLoading] = useState(false);
 
-     // set initial values for TripSelector form
-    const [values, setValues] = useState(initialState);
+    // set initial values for TripSelector form
+   const [values, setValues] = useState(initialState);
+
+
+    // function to load pop destinations using axios function
+    const loadTopDestinations = () => {
+        setLoading(true);
+        getTopDest().then((res) => {
+            setDestinations(res.data.data);
+            setLoading(false);
+        }).catch((err) => {
+            setLoading(false);
+            console.log(err);
+        })
+    }
+
+    // runs loadTopDestinations function on component mount
+    useEffect(() => {
+        loadTopDestinations();
+    },[])
+
+
 
     const handleChange = (e) => {
         // get and set the value dynamically
@@ -36,7 +57,7 @@ const Home = () => {
                 handleSubmit={handleSubmit}
                 values={values}
             />
-            <PopDestinations/>
+            <PopDestinations destinations={destinations}/>
         </main>
     )
 }
