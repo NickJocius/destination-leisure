@@ -5,9 +5,7 @@ const SectionHeader = ({title, desc}) => {
     return (
         <section className={`w-full container mb-14 bg-white`}>
             <ScrollAnimation
-                duration={4}
-                animateIn='fadeInLeft'
-               
+                animateIn='bounceInLeft'
             >
                 <h2 className={`text-black text-4xl text-center mb-4 font-passion`}>{title}</h2>
             </ScrollAnimation>

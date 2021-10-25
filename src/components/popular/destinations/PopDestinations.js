@@ -10,7 +10,7 @@ const PopDestinations = ({destinations}) => {
     return (
         <section className={`container w-full pt-14 mx-auto`}>
             <SectionHeader title={title} desc={desc} />
-            <div className={`container w-full h-xxl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-2 gap-x-2`}>
+            <div className={`container w-full h-xxl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-2 gap-x-2`}>
                 {destinations.length > 0 ? (
                     destinations.map((dest) => (
                         <DestinationCard key={dest.city} dest={dest}/>

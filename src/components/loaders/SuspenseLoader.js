@@ -6,7 +6,7 @@ const SuspenseLoader = () => {
     return (
         <div className={`min-h-screen min-w-full d-flex justify-center items-center`}>
             
-            <div className={`${styles.lds_ripple}`}><div></div><div></div></div>
+            <div className={`lds_ripple`}><div></div><div></div></div>
            
             
         </div>

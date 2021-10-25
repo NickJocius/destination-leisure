@@ -10,6 +10,9 @@ const TopNav = lazy(() => import('./components/navigation/TopNav'));
 const Home = lazy(() => import('./components/views/Home'));
 const Login = lazy(() => import('./components/views/Login'));
 
+// Footer
+const Footer = lazy(() => import('./components/footer/Footer1'));
+
 function App() {
   return (
     <Suspense fallback={
@@ -20,7 +23,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login}/>
       </Switch>
-      
+      <Footer/>
     </Suspense>
   );
 }
