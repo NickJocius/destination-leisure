@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: {
         'hero-home': "url('/src/assets/images/bgs/1920x1080.jpg')",
         'page-header': "url('/src/assets/images/bgs/1920x1080.jpg')",
+        'signup-col': "url('/src/assets/images/bgs/1920x1080.jpg')",
       },
       fontFamily: {
         'passion': ['Passion One', 'cursive'],

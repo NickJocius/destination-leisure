@@ -49,7 +49,7 @@ const TopNav = () => {
                     </div>
                     <div className="hidden md:flex items-center space-x-3 ">
                             <Link to="/login" className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</Link>
-                            <Link to="/" className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</Link>
+                            <Link to="/signup" className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</Link>
 					    </div>
 					<div className="md:hidden flex items-center">
 						<button className="outline-none mobile-menu-button" onClick={handleButton}>
