@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, NavLink, useHistory } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import {bounceInDown} from 'react-animations';
 import Logo from '../../assets/images/Leisure.png';
@@ -48,8 +48,8 @@ const TopNav = () => {
                         
                     </div>
                     <div className="hidden md:flex items-center space-x-3 ">
-                            <Link to="/login" className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</Link>
-                            <Link to="/signup" className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</Link>
+                            <NavLink to="/login" className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300" activeClassName='bg-green-500 active:text-white hover:text-yellow-200'>Log In</NavLink>
+                            <NavLink to="/signup" className="py-2 px-2 font-medium text-gray-500  rounded hover:bg-green-500 hover:text-white transition duration-300" activeClassName='bg-green-500 hover:text-yellow-200'>Sign Up</NavLink>
 					    </div>
 					<div className="md:hidden flex items-center">
 						<button className="outline-none mobile-menu-button" onClick={handleButton}>

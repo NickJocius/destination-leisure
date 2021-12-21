@@ -8,9 +8,10 @@ const SignUpForm = ({ handleChange, handleSubmit, values }) => {
         email,
         password
     } = values;
+    
     return (
         <div className={`relative`}>
-                        <form className={`relative bg-gray-200 w-96 h-auto rounded-2xl pt-8 pb-8 px-8 flex flex-col items-center shadow-xl z-10`}>
+            <form className={`relative bg-gray-200 w-96 h-auto rounded-2xl pt-8 pb-8 px-8 flex flex-col items-center shadow-xl z-10`} onSubmit={handleSubmit}>
             
             <div className={`rounded-full w-24 h-24 bg-green-400 flex justify-center items-center`}>
                 <FaUserAlt />
